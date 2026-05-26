@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marisquería La Griega</title>
+
+    <link rel="stylesheet" href="styles/style1.css">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html" class="imgLogo">
+                <img src="img/logoGriega.jpeg" alt="logoGriega">
+            </a>
+            <div class="titulo">
+                <h1>Marisquería</h1>
+                <h1>"La Griega"</h1>
+            </div>
+        </div>
+
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="menu.html">Menú</a></li>
+            <li><a href="delivery.html">Delivery</a></li>
+            <li><a href="reservaciones.html">Reservaciones</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+
+        <div class="iconos">
+            <a href="index.html"><i class="fa-regular fa-user"></i></a>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- INICIO DE SESIÓN -->
+    <main class="pantalla-login">
+        <div class="logo-circulo">
+            <img src="img/logoGriega.jpeg" alt="Logo La Griega">
+        </div>
+
+        <section class="card-login">
+            <div class="titulo-decorado">
+                <h2> INICIAR SESIÓN</h2>
+            </div>
+
+            <form class="formulario">
+                <label for="correo">CORREO:</label>
+                <div class="input-icono">
+                    <i class="fa-regular fa-envelope icono"></i>
+                    <input type="email" id="correo" placeholder="correo@ejemplo.com">
+                </div>
+
+                <label for="password">CONTRASEÑA:</label>
+                <div class="grupo-password">
+                    <div class="input-icono">
+                        <i class="fa-solid fa-lock icono"></i>
+                        <input type="password" id="password" placeholder="••••••••">
+                    </div>
+                    <a href="#" class="link-ayuda">¿Olvidaste tu contraseña?</a>
+                </div>
+
+                <button type="submit" class="btn-principal">INICIAR SESIÓN</button>
+
+                <div class="divisor">
+                    <span></span>
+                    <p>O</p>
+                    <span></span>
+                </div>
+
+                <p class="texto-registro">¿No tienes cuenta?</p>
+                <button type="button" class="btn-secundario">CREAR CUENTA</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservaciones | Marisquería La Griega</title>
+
+  <link rel="stylesheet" href="styles/style1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">
+      <a href="index.html" class="imgLogo">
+        <img src="img/logoGriega.jpeg" alt="logoGriega">
+      </a>
+      <div class="titulo">
+        <h1>Marisquería</h1>
+        <h1>"La Griega"</h1>
+      </div>
+    </div>
+
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="menu.html">Menú</a></li>
+      <li><a href="delivery.html">Delivery</a></li>
+      <li><a href="reservaciones.html">Reservaciones</a></li>
+      <li><a href="#">Nosotros</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+
+    <div class="iconos">
+      <a href="login.html"><i class="fa-regular fa-user"></i></a>
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </header>
+
+  <main class="main-inicio">
+    <section class="seccion-reservacion">
+      <div class="titulo-seccion">
+        <span></span>
+        <h2>RESERVACIÓN DE MESAS</h2>
+        <span></span>
+      </div>
+
+      <div class="contenedor-reservacion">
+        <div class="info-reservacion">
+          <h3>Reserva tu mesa</h3>
+          <p>
+            Completa el siguiente formulario para apartar tu mesa en Marisquería La Griega.
+            Selecciona la fecha, hora y mesa disponible.
+          </p>
+
+          <div class="lista-mesas-box">
+            <h4>Mesas disponibles</h4>
+            <div id="lista-mesas" class="lista-mesas">
+              <p>Cargando mesas...</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="formulario-reservacion-box">
+          <h3>Datos de la reservación</h3>
+
+          <form id="form-reservacion" class="form-reservacion">
+            <label for="nombre-reserva">Nombre completo</label>
+            <input type="text" id="nombre-reserva" required>
+
+            <label for="telefono-reserva">Teléfono</label>
+            <input type="text" id="telefono-reserva" required>
+
+            <label for="fecha-reserva">Fecha</label>
+            <input type="date" id="fecha-reserva" required>
+
+            <label for="hora-reserva">Hora</label>
+            <input type="time" id="hora-reserva" required>
+
+            <label for="mesa-reserva">Mesa</label>
+            <select id="mesa-reserva" required>
+              <option value="">Selecciona una mesa</option>
+            </select>
+
+            <button type="submit" class="btn-principal">CONFIRMAR RESERVACIÓN</button>
+          </form>
+
+          <div id="mensaje-reservacion"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="js/reservaciones.js"></script>
+</body>
+</html>

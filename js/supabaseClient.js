@@ -1,0 +1,6 @@
+//CREACION CLIENTE SUPABASE Y CONEXION A LIBRERIA SUPABASE PARA JS
+
+import { createClient } from 'https://esm.sh/@supabase/supabase-js';
+import { SUPABASE_URL, SUPABASE_ANON_KEY } from './config.js';
+
+export const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú | Marisquería La Griega</title>
+
+    <link rel="stylesheet" href="styles/style1.css">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html" class="imgLogo">
+                <img src="img/logoGriega.jpeg" alt="logoGriega">
+            </a>
+            <div class="titulo">
+                <h1>Marisquería</h1>
+                <h1>"La Griega"</h1>
+            </div>
+        </div>
+
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="menu.html">Menú</a></li>
+            <li><a href="delivery.html">Delivery</a></li>
+            <li><a href="reservaciones.html">Reservaciones</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+
+        <div class="iconos">
+            <a href="Login.html"><i class="fa-regular fa-user"></i></a>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <main class="main-inicio">
+        <section class="platillos-destacados">
+            <div class="titulo-seccion">
+                <span></span>
+                <h2>MENÚ COMPLETO</h2>
+                <span></span>
+            </div>
+
+            <div class="filtros-menu">
+                <label for="filtro-categoria">Categoría:</label>
+                <select id="filtro-categoria">
+                    <option value="">Todas</option>
+                </select>
+            </div>
+
+            <div class="grid-platillos" id="grid-menu-completo">
+                <!-- Productos cargados desde Supabase -->
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="js/menu.js"></script>
+</body>
+</html>
